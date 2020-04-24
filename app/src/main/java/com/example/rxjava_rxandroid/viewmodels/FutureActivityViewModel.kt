@@ -10,7 +10,7 @@ class FutureActivityViewModel: ViewModel() {
 
     private val repo = FutureActivityRepo.instance
 
-   public fun makeFutureQuery() : Future<Observable<ResponseBody>>{
+    fun makeFutureQuery() : Future<Observable<ResponseBody>>{
        return repo.makeFutureQuery()
     }
 }
