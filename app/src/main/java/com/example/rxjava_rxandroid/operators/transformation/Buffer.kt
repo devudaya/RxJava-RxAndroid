@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.rxjava_rxandroid.DataSource
 import com.example.rxjava_rxandroid.R
-import com.example.rxjava_rxandroid.Task
+import com.example.rxjava_rxandroid.models.Task
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers

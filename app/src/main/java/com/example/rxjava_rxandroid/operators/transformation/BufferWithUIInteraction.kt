@@ -9,7 +9,6 @@ import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_buffer_with_u_i_interaction.*
 import java.util.concurrent.TimeUnit
 

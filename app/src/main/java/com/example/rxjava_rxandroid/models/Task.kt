@@ -1,4 +1,4 @@
-package com.example.rxjava_rxandroid
+package com.example.rxjava_rxandroid.models
 
 data class Task(
     var description: String,
