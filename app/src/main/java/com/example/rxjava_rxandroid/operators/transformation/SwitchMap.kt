@@ -60,6 +60,7 @@ class SwitchMap : AppCompatActivity() {
                     Log.d(TAG, "test: " + Thread.currentThread().name + ", " + it)
                     progress_bar.max = 3000 - PERIOD.toInt()
                     progress_bar.progress = ((it * PERIOD) + PERIOD).toInt()
+                    Log.d(TAG, "Progress Bar val: $it" )
                     it <= (3000 / PERIOD)
                 }
                 .filter{
@@ -115,6 +116,7 @@ class SwitchMap : AppCompatActivity() {
 
     private fun initRecyclerView() {
         adapter = SwitchMapPostAdapter { position: Int ->
+            progress_bar.progress = 0
             publishSubject.onNext(adapter!!.getPosts()[position])
         }
         recycler_view.layoutManager = LinearLayoutManager(this)

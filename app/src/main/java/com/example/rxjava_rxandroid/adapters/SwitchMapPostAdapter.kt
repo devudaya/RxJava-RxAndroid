@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.switch_map_post_item_layout.view.*
 
 
 class SwitchMapPostAdapter(
-    private val onPostClick: ((position: Int) -> Unit)
+    private val onPostClick: ((position: Int)->Unit)
 ) : RecyclerView.Adapter<SwitchMapPostAdapter.ViewHolder>() {
 
     private val TAG = "SwitchMapAdapter"

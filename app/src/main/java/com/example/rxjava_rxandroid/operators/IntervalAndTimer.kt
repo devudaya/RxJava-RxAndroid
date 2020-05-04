@@ -21,9 +21,11 @@ class IntervalAndTimer : AppCompatActivity() {
         setContentView(R.layout.activity_interval_and_timer)
 
         val intervalObservable = Observable
-            .timer(3, TimeUnit.SECONDS)
+            .interval(4, TimeUnit.SECONDS)
+//            .timer(10, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .takeWhile { num ->
+                Log.d(TAG, "Num in take while is: $num")
                 num < 10
             }
             .observeOn(AndroidSchedulers.mainThread())
